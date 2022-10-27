@@ -16,6 +16,16 @@ body {
   color: var(--title-text-color);
   font-family: "Roboto", sans-serif;
 }
+
+.container {
+width: 1170px;
+margin-left:auto;
+margin-right: auto;
+
+outline: 2px solid red;
+outline-offset: -2px;
+}
+
 /* reset start */
 
 h1,h2,h3,h4,h5,h6,p{
@@ -115,6 +125,12 @@ color: var(--accent-color);
 /* header end */
 
 /*---------HERO--------*/
+.middle-section-indent{
+  padding-bottom: 102px;
+}
+.hero-list{
+  width: 270px;
+}
 .middle-text {
 
   margin-bottom: 30px;
@@ -161,7 +177,12 @@ color: var(--accent-color);
   color: var(--accent-color);
 }
 
+.hero{
+padding-bottom: 94px;
+}
+
 .hero-title {
+  margin-bottom: 10px;
   font-size: 14px;
   line-height: calc(16 / 14);
   letter-spacing: 0.03em;
@@ -183,6 +204,7 @@ color: var(--accent-color);
   letter-spacing: 0.03em;
 
   color: var(--primary-text-color);
+  padding-bottom: 94px;
 }
 
 .work-title {
@@ -234,6 +256,12 @@ color: var(--accent-color);
 }
 
 /*-------------------PAGE2-----------*/
+
+.main-product{
+  padding-top: 150px;
+  padding-bottom: 53px;
+}
+
 .btn {
   font-family: "Roboto";
   cursor: pointer;
