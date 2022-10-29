@@ -3,12 +3,20 @@
 /*--акцент #2196F3 --*/
 /* цвет фона #F5F5F5 */
 /* цвет вторичного фона #F5F4FA */
+/* белый #FFFFFF */
 
 
 :root {
+  /* TEXT COLORS */
 --primary-text-color: #212121;
 --title-text-color: #757575;
 --accent-color: #2196F3;
+--white-color: #FFFFFF;
+
+/* OTHERS */
+--indent: 30px;
+--items: 3;
+
 }
 
 body {
@@ -18,12 +26,12 @@ body {
 }
 
 .container {
-width: 1170px;
+width: 1200px;
 margin-left:auto;
 margin-right: auto;
 
-outline: 2px solid red;
-outline-offset: -2px;
+/* outline: 2px solid red;
+outline-offset: -2px; */
 }
 
 /* reset start */
@@ -52,9 +60,33 @@ a {
 }
 /* reset end */
 
+/* CARD SET */
+.card-set {
+  height: calc(368 / 1170);
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--indent)
+}
+.card-set-item{
+  flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / (var(--items)));
+}
+/* CARD SET */
+
+
 /*---------HEADER----------*/
 
+.header-container{
+height: 80px;
+display: flex;
+margin-right: auto;
+align-items: center;
+background-color: var(--white-color);
+
+}
+
 .logo {
+  margin-left: 0;
+  margin-right: 93px;
   font-weight: 700;
   font-size: 26px;
   line-height: calc(31 / 26);
@@ -68,6 +100,9 @@ a {
   color: #000000;
 }
 .nav-list {
+  display: flex;
+  align-items: center;
+  gap: 50px; 
   font-weight: 500;
   font-size: 14px;
   line-height: calc(16 / 14);
@@ -98,6 +133,7 @@ color: var(--accent-color);
 }
 
 .header-mail {
+  margin-right: 50px;
   font-weight: 500;
   font-size: 14px;
   line-height: calc(16 / 14);
@@ -111,6 +147,7 @@ color: var(--accent-color);
 }
 
 .header-tel {
+  margin-right: 215px;
   font-weight: 500;
   font-size: 14px;
   line-height: calc(16 / 14);
@@ -125,14 +162,26 @@ color: var(--accent-color);
 /* header end */
 
 /*---------HERO--------*/
+.container-middle{
+  background-color: #2F303A;
+}
 .middle-section-indent{
   padding-bottom: 102px;
+
 }
 .hero-list{
-  width: 270px;
+  display: flex;
 }
-.middle-text {
 
+.container-slogan{
+display:flex ;
+
+}
+
+.middle-text {
+  margin: auto;
+  padding-top: 200px;
+  padding-bottom: 280px;
   margin-bottom: 30px;
   width: 696px;
   height: 120px;
@@ -148,23 +197,24 @@ color: var(--accent-color);
   text-transform: uppercase;
   
   color: #FFFFFF;
+  
+}
+
+.middle-container{
   background-color: #2F303A;
 }
 
 .order-btn{
-  min-width: 160px;
-  min-height: 40px;
-  padding: 8px 30px;
+  padding: 10px 32px;
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: calc(30/16);
-  display: flex;
-  align-items: center;
-  text-align: center;
   letter-spacing: 0.06em;
+  border: 0;
   border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0,0,0,0.15);
 
   color: #FFFFFF;
   border-color: var(--accent-color);
@@ -182,6 +232,7 @@ padding-bottom: 94px;
 }
 
 .hero-title {
+  align-items: center;
   margin-bottom: 10px;
   font-size: 14px;
   line-height: calc(16 / 14);
@@ -208,6 +259,7 @@ padding-bottom: 94px;
 }
 
 .work-title {
+  padding-bottom: 50px;
   font-size: 36px;
   line-height: calc(42 / 36);
   text-align: center;
@@ -216,6 +268,7 @@ padding-bottom: 94px;
   color: var(--primary-text-color);
 }
 .worker-title {
+  margin-bottom: 10px;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -227,10 +280,20 @@ padding-bottom: 94px;
   color: var(--primary-text-color);
 }
 
+.team-list{
+  --items: 4;
+}
+
+.team-wrapper{
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
 .team {
   background: #f5f4fa;
 }
 .team-title {
+  padding-bottom: 50px;
   font-size: 36px;
   line-height: calc(42 / 36);
   text-align: center;
@@ -239,9 +302,7 @@ padding-bottom: 94px;
   background-color: #f5f4fa;
   color: var(--primary-text-color);
 }
-.team-list {
-  height: calc(368 / 1170);
-}
+
 .team-workers {
   height: calc(368 / 1170);
 }
@@ -255,6 +316,8 @@ padding-bottom: 94px;
   color: var(--title-text-color);
 }
 
+
+
 /*-------------------PAGE2-----------*/
 
 .main-product{
@@ -262,7 +325,12 @@ padding-bottom: 94px;
   padding-bottom: 53px;
 }
 
+.nav-btn{
+  display: flex;
+  justify-content: center;
+}
 .btn {
+
   font-family: "Roboto";
   cursor: pointer;
   font-style: normal;
@@ -273,6 +341,7 @@ padding-bottom: 94px;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
 }
+
 .product-title {
   font-style: normal;
   font-size: 18px;
@@ -291,6 +360,9 @@ padding-bottom: 94px;
   letter-spacing: 0.03em;
 
   color: var(--title-text-color);
+}
+.product-list{
+  --items:9;
 }
 
 .middle-btns:hover,
@@ -315,6 +387,7 @@ padding-bottom: 94px;
 }
 .logo-bottom {
   color:#FFFFFF;
+  padding-top: 60px;
 }
 
 .adress-name {

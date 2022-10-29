@@ -17,10 +17,10 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <!-- Up -->
+    <!-- HEADER -->
     <header>
-      <div class="container">
-          <nav>
+      <div class=" header-container container">
+          <nav class="header-container">
               <a class="logo" href="WebStudio">Web<span class="logo-header">Studio</span></a>
                   <ul class="nav-list list">
                       <li class="nav-item"> <a href="./index.html" class="nav-link link">Студія</a> </li>
@@ -29,20 +29,20 @@
                   </ul>
           </nav>
           <a href="mailto:" class="header-mail link">info@devstudio.com</a>
-          <a href="tel:+380961111111" class="header-tel link">+380961111111</a>
+          <a href="tel:+38096 111 11 11" class="header-tel link">+380961111111</a>
       </div>
           </header>
     <!-- Hero -->
     <main>
       <section class="middle-section-indent">
-<div class="container">
+<div class="middle-container container">
   <h1 class="middle-text">Ефективні рішення для вашого бізнесу</h1>
   <button class="order-btn" type="button">Замовити послугу</button>
 </div>
       </section>
 
       <section class="hero">
-<div class="container">
+<div class="container-slogan container">
   <ul class="hero-list list">
     <li class="hero-list-item">
       <h3 class="hero-title">УВАГА ДО ДЕТАЛЕЙ</h3>
@@ -66,10 +66,10 @@
     </li>
     <li class="hero-list-item">
       <h3 class="hero-title">СУЧАСНІ ТЕХНОЛОГІ</h3>
-      <p class="hero-text">
-        Значимість цих проблем настільки очевидна, що реалізація планових
-        завдань.
-      </p>
+  <p class="hero-text">
+    Значимість цих проблем настільки очевидна, що реалізація планових
+    завдань.
+  </p>
     </li>
   </ul>
 </div>
@@ -78,8 +78,8 @@
       <section class="work">
 <div class="container">
   <h2 class="work-title">Чим ми займаємося</h2>
-  <ul class="work-list list">
-    <li>
+  <ul class="work-list card-set list">
+    <li class="card-set-item">
       <img
         src="./images/box3.jpg"
         class="work-list-img3"
@@ -88,7 +88,7 @@
         height="294"
       />
     </li>
-    <li>
+    <li class="card-set-item">
       <img
         src="./images/box2.jpg"
         class="work-list-img2"
@@ -97,7 +97,7 @@
         height="294"
       />
     </li>
-    <li>
+    <li class="card-set-item">
       <img
         src="./images/box1.jpg"
         class="work-list-img1"
@@ -114,8 +114,8 @@
 <div class="container">
   <h3 class="team-title">Наша команда</h3>
 
-  <ul class="team-list list">
-    <li>
+  <ul class="team-list card-set list">
+    <li class="card-set-item">
       <img
         src="./images/igor.jpg"
         class="workers-photo"
@@ -123,10 +123,12 @@
         width="270"
         height="260"
       />
-      <h3 class="worker-title">Ігор Дем'яненко</h3>
-      <p class="team-text">Product Designer</p>
+<div class="team-wrapper">
+  <h3 class="worker-title">Ігор Дем'яненко</h3>
+  <p class="team-text">Product Designer</p>
+</div>
     </li>
-    <li>
+    <li class="card-set-item">
       <img
         src="./images/olga.jpg"
         class="workers-photo"
@@ -134,10 +136,12 @@
         width="270"
         height="260"
       />
-      <h3 class="worker-title">Ольга Рєпіна</h3>
-      <p class="team-text">Frontend Developer</p>
+<div class="team-wrapper">
+  <h3 class="worker-title">Ольга Рєпіна</h3>
+  <p class="team-text">Frontend Developer</p>
+</div>
     </li>
-    <li>
+    <li class="card-set-item">
       <img
         src="./images/mykola.jpg"
         class="workers-photo"
@@ -145,10 +149,12 @@
         width="270"
         height="260"
       />
-      <h3 class="worker-title">Микола Тарасов</h3>
-      <p class="team-text">Marketing</p>
+<div class="team-wrapper">
+  <h3 class="worker-title">Микола Тарасов</h3>
+  <p class="team-text">Marketing</p>
+</div>
     </li>
-    <li>
+    <li class="card-set-item">
       <img
         src="./images/mykhailo.jpg"
         class="workers-photo"
@@ -156,14 +162,16 @@
         width="270"
         height="260"
       />
-      <h3 class="worker-title">Михайло Єрмаков</h3>
-      <p class="team-text">UI Designer</p>
+<div class="team-wrapper">
+  <h3 class="worker-title">Михайло Єрмаков</h3>
+  <p class="team-text">UI Designer</p>
+</div>
     </li>
   </ul>
 </div>
       </section>
     </main>
-    <!-- Bottom -->
+    <!-- FOOTER -->
     <footer class="color-foot">
 <div class="container">
   <a class="logo" href="WebStudio"
