@@ -162,13 +162,12 @@ color: var(--accent-color);
 /* header end */
 
 /*---------HERO--------*/
-.container-middle{
-  background-color: #2F303A;
-}
+
 .middle-section{
   text-align: center;
   padding-bottom: 102px;
-
+  background-color: #2F303A;
+  
 }
 .hero-list{
   display: flex;
@@ -193,11 +192,6 @@ display:flex ;
   text-transform: uppercase;
   
   color: #FFFFFF;
-  
-}
-
-.middle-container{
-  background-color: #2F303A;
   
 }
 
