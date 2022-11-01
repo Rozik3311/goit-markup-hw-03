@@ -290,7 +290,7 @@ display:flex ;
 
 .team-wrapper{
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 94px;
 }
 
 .team {
@@ -327,8 +327,8 @@ display:flex ;
 /*-------------------PAGE2-----------*/
 
 .main-product{
-  padding-top: 150px;
-  padding-bottom: 53px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .nav-btn{
@@ -350,8 +350,10 @@ display:flex ;
   color: var(--primary-text-color);
 }
 .product-wrapper{
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
   box-sizing: border-box;
   background: var(--white-color) ;
   border: 1px solid #EEEEEE;
@@ -401,6 +403,7 @@ display:flex ;
   line-height: calc(31/26);
   letter-spacing: 0.03em;
   color: var(--accent-color);
+  font-family: Raleway;
 
 }
 .logo-bottom {
@@ -421,12 +424,14 @@ display:flex ;
 
 .footer-contact{
   margin-bottom: 9px;
+  font-weight: 400;
 }
 .bottom-mail {
   font-size: 14px;
   line-height: calc(24/14);
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+  
 }
 .bottom-tel {
   font-size: 14px;
